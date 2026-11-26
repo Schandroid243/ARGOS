@@ -1,0 +1,67 @@
+# Git and local repository metadata
+.git/
+.gitignore
+.github/
+.husky/
+
+# Environment files and secrets (NF-09)
+.env
+.env.*
+!.env.example
+
+# macOS Finder metadata
+.DS_Store
+
+# Documentation and markdown
+README.md
+docs/
+
+# Raw media (photos, screenshots, videos, browser captures) (NF-07)
+**/*.[jJ][pP][eE][gG]
+**/*.[jJ][pP][gG]
+**/*.[hH][eE][iI][cC]
+**/*.[hH][eE][iI][fF]
+**/*.[pP][nN][gG]
+**/*.[mM][oO][vV]
+**/*.[mM][pP]4
+**/*.[wW][eE][bB][mM]
+**/*.[aA][vV][iI]
+**/*.[mM][kK][vV]
+
+# Model weights, training runs, datasets, and numeric arrays (NF-07)
+**/*.pt
+**/*.pth
+**/*.safetensors
+**/*.onnx
+**/*.engine
+**/*.plan
+**/*.tflite
+**/*.mlpackage
+**/*_openvino_model/
+**/*.npy
+**/*.npz
+**/*.pkl
+**/*.pickle
+**/*.joblib
+**/*.parquet
+**/*.h5
+**/*.hdf5
+**/runs/
+**/weights/
+**/datasets/
+
+# Local database dumps and backups (NF-07)
+**/*.dump
+**/*.backup
+**/backups/
+
+# Dependencies, build outputs, caches, and test coverage
+**/coverage/
+**/node_modules/
+**/dist/
+**/build/
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/

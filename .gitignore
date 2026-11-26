@@ -1,0 +1,57 @@
+# Variables d'environnement et secrets
+.env
+.env.*
+!.env.example
+
+# Système macOS
+.DS_Store
+
+# Médias bruts (photos, captures, vidéos, démos)
+*.[jJ][pP][eE][gG]
+*.[jJ][pP][gG]
+*.[hH][eE][iI][cC]
+*.[hH][eE][iI][fF]
+*.[pP][nN][gG]
+*.[mM][oO][vV]
+*.[mM][pP]4
+*.[wW][eE][bB][mM]
+*.[aA][vV][iI]
+*.[mM][kK][vV]
+
+# Modèles, runs, datasets et tableaux numériques
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.engine
+*.plan
+*.tflite
+*.mlpackage
+*_openvino_model/
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+*.parquet
+*.h5
+*.hdf5
+runs/
+weights/
+datasets/
+
+# Sauvegardes locales de base de données (hors migrations ORM / init SQL)
+*.dump
+*.backup
+backups/
+
+# Couverture de tests, dépendances et builds locaux
+coverage/
+node_modules/
+dist/
+build/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
